@@ -22,3 +22,12 @@ sudo pip3 install docker-compose
 # Enable the Docker system service to start your containers on boot
 echo "Enable the Docker system service to start your containers on boot"
 sudo systemctl enable docker
+
+while true; do
+    read -p "System needs to reboot. Proceed?" yn
+    case $yn in
+        [Yy]* ) sudo reboot; break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
