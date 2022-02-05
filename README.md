@@ -4,7 +4,9 @@ This project runs on Raspberry Pi OS (Legacy) [Debian Buster].
 
 Steps to run.
 
-  ## 1. **[One-time Setup]** Setup Google Cloud account first to use Google Cloud Vision service.
+  ## 1. **[One-time Setup]** Setup Google Cloud account
+  
+  Setup Google Cloud Vision service by following steps from [here](https://github.com/myworkmcoblefias/facial_recog_pi/blob/main/GOOGLE%20CLOUD%20SETUP%20README.md)
 
   > End product is a downloaded json credential file.
       
