@@ -1,17 +1,15 @@
-version: "3.9"
+version: "3"
 services:
-  backend:
-    # build:
-    #   dockerfile: Dockerfile
-    image: mcoblefiasmw/arm32v7_buster
+  app:
+    build: .
+    image: mcoblefiasmw/arm32v7_buster_with_google_vision
     volumes:
-      - /tmp/.X11-unix:/tmp/.X11-unix
-      # - /dev:/dev
-      # - /opt/vc:/opt/vc
-      - ./src:/src
+      - /home/pi/:/home/pi/
+      # below volume mapping is needed as /opt/vc/lib/libmm_host.so is used by picamera
+      - /opt/vc:/opt/vc
+    devices:
+      - /dev/vchiq:/dev/vchiq
     environment:
-      - DISPLAY=$DISPLAY
       - GOOGLE_APPLICATION_CREDENTIALS=$GOOGLE_APPLICATION_CREDENTIALS
-    command: python3 /src/main.py
-    # command: tail -F nothing
+      - LD_LIBRARY_PATH=/opt/vc/lib
     privileged: true
