@@ -5,8 +5,8 @@ RUN apt-get -y update
 RUN pip install google-cloud
 RUN pip install google-cloud-vision
 
-WORKDIR /home/pi/app
+# WORKDIR /home/pi/app
 
-COPY /home/pi/app .
+# COPY /home/pi/app .
 
 CMD service ssh start && /bin/bash
