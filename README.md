@@ -22,6 +22,8 @@ sudo pip3 install docker-compose
  ```
  
   3.  Clone this repository
+  
+  ```cd facial_recog_pi```
    
   4.  Build and run image by running below command
   
