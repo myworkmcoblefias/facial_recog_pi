@@ -3,12 +3,11 @@ services:
   app:
     build: .
     image: mcoblefiasmw/arm32v7_buster_with_google_vision
+    devices: /dev/vchiq:/dev/vchiq
     volumes:
       - /home/pi/:/home/pi/
       # below volume mapping is needed as /opt/vc/lib/libmm_host.so is used by picamera
       - /opt/vc:/opt/vc
-    devices:
-      - /dev/vchiq:/dev/vchiq
     environment:
       - GOOGLE_APPLICATION_CREDENTIALS=$GOOGLE_APPLICATION_CREDENTIALS
       - LD_LIBRARY_PATH=/opt/vc/lib
