@@ -10,26 +10,32 @@ Steps to run.
       
       Place your credentials file in /home/pi/<credentials>.json
   
-      run ```export GOOGLE_APPLICATION_CREDENTIALS=/home/pi/<credentials>.json```
+  2.  Clone this repository
   
-  2.  Install docker and docker-compose
+  This will do the following:
   
- ```
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
-sudo usermod -aG docker pi
-sudo pip3 install docker-compose
- ```
- 
-  3.  Clone this repository
+  1.  Update and upgrade environment
+  2.  Install docker
+  3.  Add a Non-Root User to the Docker Group
+  4.  Install docker-compose
+  5.  Enable the Docker system service to start your containers on boot
+  *   It will ask you to reboot after running all commands.
   
-  ```cd facial_recog_pi```
+  ```
+  cd facial_recog_pi
+  chmod +x prepare.sh
+  ./prepare.sh
+  ```
+  
+  3.  Export environment variable for credential file
+  
+ ```run export GOOGLE_APPLICATION_CREDENTIALS=/home/pi/<credentials>.json```
    
-  4.  Build and run image by running below command
+  4.  Build and run image by running below command. After run, it will open container in ```/home/pi/facial_recog_pi/src```.
   
   ```docker-compose run app```
 
-  5.  Inside container, go to src. There will be 3 files inside.
+  5.  There will be 3 files inside src folder.
   
   To test, run below commands:
   - ```python camera_vision_face.py``` - for detecting facial expressions
