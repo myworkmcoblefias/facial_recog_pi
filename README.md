@@ -1,12 +1,10 @@
 # facial_recog_pi
 
-This project was tested to run on Raspberry Pi OS (Legacy) [Debian Buster].
-
-Uses RPi OS Legacy as container image with google_vision package.
+This project runs on Raspberry Pi OS (Legacy) [Debian Buster].
 
 Steps to run.
 
-  1.  Setup Google Cloud account first to use Google Cloud Vision service.
+  1.  [One-time Setup] Setup Google Cloud account first to use Google Cloud Vision service.
 
       End product is a downloaded json credential file.
       
@@ -23,13 +21,13 @@ sudo usermod -aG docker pi
 sudo pip3 install docker-compose
  ```
  
-  3.  Run image using below command
+  3.  Clone this repository
+   
+  4.  Build and run image by running below command
+  
+  ```docker-compose run app```
 
-```
-docker-compose up -d --build
-```
-
-  4.  Inside container, go to src. There will be 3 files inside.
+  5.  Inside container, go to src. There will be 3 files inside.
   
   To test, run below commands:
   - ```python camera_vision_face.py``` - for detecting facial expressions
