@@ -10,13 +10,13 @@ Steps to run.
 
   > End product is a downloaded json credential file.
       
-   Place your credentials file in ```/home/pi/credentials.json```. 
+   Place your credentials file in ```/home/pi/<credentials>.json```. 
    
    *Any filename will do*
   
   ## 2.  Clone this repository
   
-  ## 3.  Run below commands
+  ## 3.  Run below commands ⏩
 
   ```
   cd facial_recog_pi
@@ -24,7 +24,7 @@ Steps to run.
   ./prepare.sh
   ```
   
-  ```prepare.sh``` will do the following:
+  ```prepare.sh``` will do the following: 🧰
   
     1.  Update and upgrade environment
     2.  Install docker
@@ -44,6 +44,8 @@ Steps to run.
   cd /home/pi/facial_recog_pi
   docker-compose run app
   ```
+  
+  ⚠️ this may take approximately 15mins ⚠️
   
   > After run, it will open container in ```/home/pi/facial_recog_pi/src```.
 
