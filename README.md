@@ -1,6 +1,6 @@
 # facial_recog_pi
 
-This project runs on Raspberry Pi OS (Legacy) [Debian Buster].
+This project was tested to run on Raspberry Pi OS (Legacy) [Debian Buster].
 
 Steps to run.
 
