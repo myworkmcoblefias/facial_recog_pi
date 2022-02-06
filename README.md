@@ -45,8 +45,6 @@ Steps to run.
   docker-compose run app
   ```
   
-  ⚠️ this may take approximately 15mins ⚠️
-  
   > After run, it will open container in ```/home/pi/facial_recog_pi/src```.
 
   ## 6.  There will be 3 files inside src folder.
