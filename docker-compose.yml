@@ -1,7 +1,7 @@
 version: "3"
 services:
   app:
-    build: .
+    # build: .
     image: mcoblefiasmw/arm32v7_buster_with_google_vision
     volumes:
       - /home/pi/:/home/pi/
