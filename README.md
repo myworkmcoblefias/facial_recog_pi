@@ -1,6 +1,6 @@
 # facial_recog_pi
 
-This project was tested to run on Raspberry Pi OS (Legacy) [Debian Buster].
+This project was tested to run on Raspberry Pi OS (Legacy) [Debian Buster] and Bullseye (need to run sudo ```sudo raspi-config```).
 
 Steps to run.
 
