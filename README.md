@@ -10,9 +10,7 @@ Steps to run.
 
   > End product is a downloaded json credential file.
       
-   Place your credentials file in ```/home/pi/<credentials>.json```. 
-   
-   *Any filename will do*
+   Place your credentials file in ```/home/pi/<credentials>.json```. *(Any filename will do)*
   
   ## 2.  Clone this repository
   
