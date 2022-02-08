@@ -6,7 +6,7 @@ services:
     volumes:
       - /home/pi/:/home/pi/
       # below volume mapping is needed as /opt/vc/lib/libmm_host.so is used by picamera
-      - /opt/vc:/opt/vc
+      - ~/facial_recog_pi/opt/:/opt/
     devices:
       - /dev/vchiq:/dev/vchiq
     environment:
